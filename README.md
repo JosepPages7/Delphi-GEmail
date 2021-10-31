@@ -5,7 +5,7 @@ Delphi class to send an email using gmail.
 
 ````Delphi
 
-  Gmail := TGmail.Create('YourAccount@gmail.com', 'App password', 'From you/company');
+  Gmail := TcfsGmail.Create('YourAccount@gmail.com', 'App password', 'From you/company');
   try
     try
       Gmail.Connect;
