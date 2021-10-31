@@ -22,14 +22,9 @@ Delphi class to send an email using gmail.
   
 ````
 
-Add in your executable file path the two openSSL Libraries:  "libeay32.dll"  and  "ssleay32.dll"
+NOTE 1: Add in your executable file path the two openSSL Libraries:  "libeay32.dll"  and  "ssleay32.dll".
 
-
-1. if you have not a gmail account, Create it.
-2. Important :
-   -  Enter in your Personnal Setting (gmail) go to "Security":
-      Activate “2-Step Verification” and add “App Password”
-      or Activate "Allow less secure apps "
+NOTE 2: Configure your "YourAccount@gmail.com" Account to allow sending mails from and exertnal app:  Enter in your Personnal Setting (gmail) go to "Security": Activate “2-Step Verification” and add “App Password” or Activate "Allow less secure apps "
 
 
 More info:
