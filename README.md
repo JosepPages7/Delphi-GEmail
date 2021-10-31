@@ -10,8 +10,8 @@ Delphi class to send an email using gmail.
     try
       Gmail.Connect;
       Gmail.Send(['useremail@gmail.com'], 'Subject', 'PlainBody', 'htmlBody', 'AttachmentFile');
-      Gmail.Send(...);
-      Gmail.Send(...);
+      //Gmail.Send(...);
+      //Gmail.Send(...);
     except
       on E: Exception do
         ShowMessage(E.Message);
