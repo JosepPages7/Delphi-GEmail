@@ -1,39 +1,30 @@
+// ***************************************************************************
+//
+// cfs.Email.gmail:
+// TcfsGmail is a Delphi class to send an email using gmail
+//
+// Copyright (c) 2021 Josep Pagès
+//
+// https://github.com/JosepPages7/Delphi-GEmail
+//
+//
+// ***************************************************************************
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+// *************************************************************************** }
+
 unit cfs.Email.gmail;
-
-(*
-  http://forums.unigui.com/index.php?/topic/13807-sending-email/
-   Step by Step :
-  1. if you have not a gmail account, Create it.
-  2. Important :
-   -  Enter in your Personnal Setting (gmail) go to "Security":
-      Activate “2-Step Verification” and add “App Password”
-      or Activate "Allow less secure apps "
-  3.  Add in your executable file path the two openSSL Libraries:  "libeay32.dll"  and  "ssleay32.dll"
-
-  More info:
-  http://delphiprogrammingdiary.blogspot.com/2016/09/send-email-with-html-body-format-in.html
-  http://www.andrecelestino.com/delphi-xe-envio-de-e-mail-com-componentes-indy/
-
-*)
-
-(*
-  Use sample:
-
-  Gmail := TcfsGmail.Create('YourAccount@gmail.com', 'App password', 'From you/company');
-  try
-    try
-      Gmail.Connect;
-      Gmail.Send(['useremail@gmail.com'], 'Subject', 'PlainBody', 'htmlBody', 'AttachmentFile');
-      //Gmail.Send(...);
-      //Gmail.Send(...);
-    except
-      on E: Exception do
-        ShowMessage(E.Message);
-    end;
-  finally
-    GEmail.Free;
-  end;
-*)
 
 interface
 
